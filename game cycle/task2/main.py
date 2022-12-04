@@ -63,5 +63,6 @@ if __name__ == '__main__':
         balls.drawAll()
 
         pygame.display.flip()
+        clock.tick(1000)
 
     pygame.quit()
