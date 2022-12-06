@@ -34,7 +34,7 @@ if __name__ == '__main__':
                 keys = pygame.key.get_pressed()
                 if event.key == pygame.K_z and \
                         (event.mod & pygame.KMOD_CTRL):
-                    
+
                     if len(boxes) > 0:
                         del boxes[-1]
                     # print(0)
