@@ -24,13 +24,17 @@ class WordError(PasswordError):
 
 excombos = ['qwertyuiop', 'asdfghjkl',
             'zxcvbnm', 'йцукенгшщзхъ', 'фывапролджэё', 'ячсмитьбю'
-                                                       'qwertyuiop'[::-1], 'asdfghjkl'[::-1],
-            'zxcvbnm'[::-1], 'йцукенгшщзхъ'[::-1], 'фывапролджэё'[::-1], 'ячсмитьбю'[::-1]
+                                                       'qwertyuiop'[
+                                                           ::-1], 'asdfghjkl'[::-1],
+            'zxcvbnm'[::-1], 'йцукенгшщзхъ'[::-
+                                                           1], 'фывапролджэё'[::-1], 'ячсмитьбю'[::-1]
             ]
 
-mwords = [i for i in open("top-9999-words.txt", mode="r", encoding="utf-8").read().split()]
+mwords = [i for i in open("top-9999-words.txt", mode="r",
+                          encoding="utf-8").read().split()]
 
-test_passwords = [i for i in open("top 10000 passwd.txt", mode="r", encoding="utf-8").read().split()]
+test_passwords = [i for i in open(
+    "top 10000 passwd.txt", mode="r", encoding="utf-8").read().split()]
 
 
 def check_excombos(ps):
@@ -85,8 +89,7 @@ RESL = {"DigitError": 0,
 """
 если пароль не соответствует
 нескольким критериям одновременно
-лично я считаю что надо добавить его
-во все ошибки которым он не соответсвет.
+лично я буду добавлять его во все ошибки которым он не соответсвет.
 """
 
 for psf in test_passwords:
