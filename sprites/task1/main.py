@@ -34,4 +34,4 @@ while running:
         pg.display.flip()
 pg.quit()
 #  ссылка на гит https://github.com/QBoff/PyGame/tree/master/sprites/task1
-#  картинка в папке data в корневой папке
+#  картинка в папке data в корневой папке https://github.com/QBoff/PyGame
