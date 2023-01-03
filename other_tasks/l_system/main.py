@@ -76,7 +76,7 @@ class Example(QMainWindow):
         self.sld.setValue(1)
 
         self.sld.setTickInterval(1)
-        self.sld.setRange(1, 30)
+        self.sld.setRange(1, 6)
         self.sld.setFocusPolicy(Qt.StrongFocus)
         self.sld.setTickPosition(QSlider.TicksBothSides)
         self.sld.setSingleStep(1)
