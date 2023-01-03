@@ -127,7 +127,7 @@ FPS = 30
 pygame.init()
 pygame.display.set_caption('Линеечки')
 screen = pygame.display.set_mode((800, 800))
-board = Lines(8, "7")
+board = Lines(8, 7)
 board.set_view(10, 10, 40)
 board.render(screen)
 red = None
